@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>VidzTube</title>
+        <link rel="stylesheet" href="core.css">
+        <link rel="stylesheet" href="fullscreen.css">
+        <link rel="stylesheet" href="share.css">
+        <link rel="stylesheet" href="slideshow.css">
+        <link rel="stylesheet" href="thumbs.css">
+        <link rel="stylesheet" href="vidz.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="jquery.fancybox.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="core.js"></script>
+        <script src="fullscreen.js"></script>
+        <script src="guestures.js"></script>
+        <script src="hash.js"></script>
+        <script src="media.js"></script>
+        <script src="share.js"></script>
+        <script src="slideshow.js"></script>
+        <script src="thumbs.js"></script>
+        <script src="vidz.js"></script>
+        <script src="wheel.js"></script>
+        <script>
+            $(document).ready(function(){
+                $(".fancybox").fancybox();
+            })
+        </script>
+    </head>
+    <body>
+        <div id="container">
+            <header>
+                <h1>Vidz<span>Tube</span></h1>
+                <p>Search Youtube videos</p>
+            </header>
+            <section>
+                <form id="search-form" name="search-form" onsubmit="return search() ">
+                    <div class="fieldcontainer">
+                        <input type="search" id="query" class="search-field" placeholder="Search Youtube...">
+                        <!-- <input type="submit" name="search-btn" id="search-btn" value=""> -->
+                        <button type="submit" name="search-btn" id="search-btn" value="">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+                </form>
+
+                <ul id="results"></ul>
+                <div id="buttons"></div>
+            </section>
+            <footer>
+                <p>Copyright &copy; 2018, All Rights Reserved</p>
+            </footer>
+        </div>
+    </body>
+</html>
