@@ -17,8 +17,7 @@ $(function() {
     $(searchField).on('blur', function() {
         if(searchField.val() == '') {
             $(searchField).animate({
-                width:'45%' ,
-                height:'55%'
+                width:'45%' 
             }, 400, function(){});
             $(icon).animate({
                 right:'360px'
